@@ -31,26 +31,33 @@
                         </li>
                     </ul>
                     <span>
-                        <!-- Modal trigger button -->
                         <button type="button" class="btn btn-light-taupe btn-md" data-bs-toggle="modal" data-bs-target="#modalId">
-                          Login
+                            Login
                         </button>
                         
-                        <!-- Modal Body -->
-                        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal fade text-dark" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="modal-title" id="modalTitleId">Login</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Body
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Email</label>
+                                                <input type="email" class="form-control" name="username" id="modal-username"
+                                                    placeholder="abc@mail.com" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="pw" class="form-label">Password</label>
+                                                <input type="password" class="form-control" name="pw" id="modal-pw" placeholder="" />
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
                                     </div>
                                 </div>
                             </div>
