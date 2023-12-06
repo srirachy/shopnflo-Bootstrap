@@ -13,6 +13,10 @@ body {
 }
 
 /* main */
+main {
+    min-height: 80vh;
+}
+
 .page-transparent {
     background-color: rgba(36, 32, 30, .2);
 }
