@@ -31,26 +31,33 @@
                         </li>
                     </ul>
                     <span>
-                        <!-- Modal trigger button -->
                         <button type="button" class="btn btn-light-taupe btn-md" data-bs-toggle="modal" data-bs-target="#modalId">
-                          Login
+                            Login
                         </button>
                         
-                        <!-- Modal Body -->
-                        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal fade text-dark" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="modal-title" id="modalTitleId">Login</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Body
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Email</label>
+                                                <input type="email" class="form-control" name="username" id="modal-username"
+                                                    placeholder="abc@mail.com" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="pw" class="form-label">Password</label>
+                                                <input type="password" class="form-control" name="pw" id="modal-pw" placeholder="" />
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
                                     </div>
                                 </div>
                             </div>
@@ -60,10 +67,10 @@
           </div>
         </nav>
     </header>
-    <main class="mb-5 mb-lg-0">
-        <div class="container d-flex flex-column flex-md-row border border-secondary mt-5 page-transparent p-3">
+    <main class="d-flex justify-content-center align-items-center my-5">
+        <div class="container d-flex flex-column flex-md-row border border-secondary page-transparent p-3">
             <div class="container mb-4 mb-md-0">
-                <div class="container d-flex p-2">
+                <div class="container d-flex justify-content-center align-items-center p-2">
                     <div class="container icons contact-icon rounded-circle bg-secondary d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -74,7 +81,7 @@
                         <p>12345 Meow Avenue, Mewo, MW 98765</p>
                     </div>
                 </div>
-                <div class="container d-flex p-2">
+                <div class="container d-flex justify-content-center align-items-center p-2">
                     <div class="container icons contact-icon rounded-circle bg-secondary d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -89,7 +96,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="container d-flex p-2">
+                <div class="container d-flex justify-content-center align-items-center p-2">
                     <div class="container icons contact-icon rounded-circle bg-secondary d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
